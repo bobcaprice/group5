@@ -1,8 +1,8 @@
 <div class="image-gallery">
-  <div>
-    <h2>Deliciously Flaky Portuguese Tarts: Pastéis de Nata</h2>
-  </div>
   <div *ngFor="let u of imageUrls" class="image-item">
+    <div>
+      <h2>{{ u.title }}</h2>
+    </div>
     <img [src]="u.url" alt="Image" />
     <div>
       <p>{{ u.text }}</p>
